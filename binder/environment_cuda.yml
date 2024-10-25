@@ -1,10 +1,10 @@
-name: hs_cil
+name: hs_cil_cuda
 channels:
   - conda-forge
   - ccpi
   - https://software.repos.intel.com/python/conda
 dependencies:
-  - astra-toolbox
+  - astra-toolbox=*=cuda*
   - ccpi-regulariser
   - cil
   - exspy
@@ -20,4 +20,5 @@ dependencies:
   - pystackreg
   - scikit-learn
   - scikit-image
+  - tigre
   - tomophantom
