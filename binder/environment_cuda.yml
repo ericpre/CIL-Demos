@@ -8,6 +8,7 @@ dependencies:
   - ccpi-regulariser
   - cil
   - exspy
+  - git
   - hyperspy-base>=2.0
   - hyperspy-gui-ipywidgets>=2.0
   # on linux, latest version seems to have binary incompatibility issue
@@ -17,8 +18,14 @@ dependencies:
   - libblas=*=*mkl
   - numba
   - numexpr
+  - pip
   - pystackreg
   - scikit-learn
   - scikit-image
   - tigre
   - tomophantom
+  # astra-toolbox requirement conflict
+  # https://github.com/usnistgov/etspy/issues/14
+  #- pip:
+  #  # until etspy is available on pypi.org
+  #  - git+https://github.com/usnistgov/etspy
