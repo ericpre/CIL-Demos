@@ -1,17 +1,20 @@
-name: cil_binder
+name: cil_hyperspy_binder
 channels:
-  - https://software.repos.intel.com/python/conda
-  - oxfordcontrol
-  - ccpi
   - conda-forge
-  - cvxgrp
-  - astra-toolbox
-  - defaults
+  - ccpi
+  - https://software.repos.intel.com/python/conda
 dependencies:
-  - ipywidgets[version='<8']
   - astra-toolbox
-  - cil=23.1.0
-  - astra-toolbox
-  - cil=23.1.0
+  - ccpi-regulariser
+  - cil
+  - exspy
+  - hyperspy-base>=2.0
+  - hyperspy-gui-ipywidgets>=2.0
+  - ipympl
+  - libblas=*=*mkl
+  - numba
+  - numexpr
+  - pystackreg
+  - scikit-learn
+  - scikit-image
   - tomophantom
-prefix: /media/newhd/vaggelis/miniconda3/envs/cil_binder
